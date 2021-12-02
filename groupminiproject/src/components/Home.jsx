@@ -1,8 +1,10 @@
+import DataGetter from "./DataGetter";
+
 const Home = () => {
     return (
         <div id="Home">
 
-            <h1>Home</h1>
+            <DataGetter/>
 
         </div>
     );
