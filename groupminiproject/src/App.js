@@ -53,7 +53,7 @@ function App() {
 
             </Switch>
       </Router>
-      <DataGetter/>
+      {/* <DataGetter/> */}
 
 
 
