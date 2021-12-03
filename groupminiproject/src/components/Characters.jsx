@@ -34,24 +34,36 @@ const Characters = () => {
         for (let i = 0; i < data.length; i++) {
             Please.push(data[i].name);
         }
+
+        let DearGod = [];
+        for (let i = 0; i < data.length; i++) {
+            DearGod.push(data[i]._id);
+        }
+        console.log(DearGod);
+
+        let HelpMe = [];
+        for (let i = 0; i < DearGod.length; i++) {
+            HelpMe.push(`Id:${DearGod[i]}   Name:${Please[i]}`)
+        }
+
         console.log(Please);
         return (
-            <div>
-                <>
-                    {
-                        Please.map((a) => (
-                            <p>{a}</p>
-                        ))
-                    }
-                </>
-                <div style={{ backgroundImage: `url(${background})`, height: '100vh' }} class="container-fluid">
-                    <div>
-                        <h1>Characters</h1>
-                    </div>
+            <div style={{ backgroundImage: `url(${background})`, height: '100%', width: '100%' }} class="container-fluid">
+                <div>
+
+                    <>
+                        {
+                            HelpMe.map((a) => (
+                                <p>{a}</p>
+                            ))
+                        }
+                    </>
+
+
+
 
                 </div>
             </div>
-
         )
     }
 }
