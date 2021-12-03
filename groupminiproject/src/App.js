@@ -4,7 +4,9 @@ import Characters from "./components/Characters";
 import Films from "./components/Films";
 import Home from "./components/Home";
 import Tv from "./components/Tv";
-
+// import Router from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import DataGetter from "./components/DataGetter";
 function App() {
   return (
     <div className="App">
@@ -44,7 +46,8 @@ function App() {
                 </Route>
 
             </Switch>
-        </Router>
+      </Router>
+      <DataGetter/>
     </div>
   );
 }
