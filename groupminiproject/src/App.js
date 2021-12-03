@@ -1,50 +1,54 @@
 // import logo from './logo.svg';
 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import Characters from "./components/Characters";
 import Films from "./components/Films";
 import Home from "./components/Home";
 import Tv from "./components/Tv";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <div className="App">
       <Router>
-            <div>
-                <li>
-                    <Link to="/">Home</Link>
+        <div>
+          <li>
+            <Link to="/">Home</Link>
           </li>
           <li>
-                    <Link to="/Characters">Characters</Link>
+            <Link to="/Characters">Characters</Link>
           </li>
           <li>
-                    <Link to="/Films">Films</Link>
+            <Link to="/Films">Films</Link>
           </li>
           <li>
-                    <Link to="/Tv">Tv</Link>
-                </li>
+            <Link to="/Tv">Tv</Link>
+          </li>
 
-            </div>
-            <Switch>
+        </div>
+        <Switch>
 
-                <Route path="/" exact>
-                    <Home />
+          <Route path="/" exact>
+            <Home />
 
           </Route>
           <Route path="/Characters" >
-                    <Characters />
+            <Characters />
 
           </Route>
           <Route path="/Films" >
-                    <Films />
+            <Films />
 
           </Route>
           <Route path="/Tv" >
-                    <Tv/>
+            <Tv />
 
-                </Route>
+          </Route>
 
-            </Switch>
-        </Router>
+        </Switch>
+      </Router>
     </div>
   );
 }
