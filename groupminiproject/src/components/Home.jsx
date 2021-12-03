@@ -1,9 +1,13 @@
 import DataGetter from "./DataGetter";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import background from "../resources/homebg.jpg";
 
 const Home = () => {
     return (
-        <h1>Homepage</h1>
+        <div style={{ backgroundImage: `url(${background})`, height: '100vh' }} class="container-fluid">
+            <div class="container">
+                <h1>Homepage</h1>
+            </div>
+        </div>
     );
 }
 
