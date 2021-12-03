@@ -6,10 +6,10 @@ const DataGetter = () => {
     const [error, setError] = useState(null);
     useEffect(() => {
         axios.get("http://api.disneyapi.dev/characters").then((result) => {
-            
+
             setData(result.data.data)
         }, (error) => {
-            
+
             setError(error);
         })
     }, [])
@@ -20,9 +20,9 @@ const DataGetter = () => {
         </div>
     } else {
         console.log(data);
-       return <h2>Data Got</h2>
+        return <h2>Data Got</h2>
     }
-   
+
 }
- 
+
 export default DataGetter;
