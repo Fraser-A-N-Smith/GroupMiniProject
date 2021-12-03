@@ -1,5 +1,7 @@
+
 import axios from 'axios';
 import { useEffect, useState } from "react";
+import background from "../resources/charactersbg.jpg";
 
 const Characters = () => {
     const [data, setData] = useState([]);
@@ -34,6 +36,7 @@ const Characters = () => {
         }
         console.log(Please);
         return (
+          <div>
             <>
                 {
                     Please.map((a) => (
@@ -41,10 +44,18 @@ const Characters = () => {
                     ))
                 }
             </>
+            <div style={{ backgroundImage: `url(${background})`, height: '100vh' }} class="container-fluid">
+            <div>
+                <h1>Characters</h1>
+            </div>
 
+        </div>
+         </div>
 
         )
     }
-}
+
+
+
 
 export default Characters;
