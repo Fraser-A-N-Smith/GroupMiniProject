@@ -10,7 +10,7 @@ import Tv from "./components/Tv";
 import DataGetter from "./components/DataGetter";
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
