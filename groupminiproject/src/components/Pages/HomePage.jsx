@@ -1,6 +1,8 @@
 import Header from "./Header";
 import Image from "./Image";
+
 import Text from "./Text";
+import SearchBtn from "./SearchBtn";
 
 const HomePage = () => {
     return ( 
@@ -8,6 +10,8 @@ const HomePage = () => {
             <Image/>
             <Header/>
             <Text/>
+            
+            <SearchBtn/>
             
         </div>
      );
