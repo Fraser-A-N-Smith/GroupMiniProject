@@ -36,24 +36,25 @@ const Characters = () => {
         }
         console.log(Please);
         return (
-          <div>
-            <>
-                {
-                    Please.map((a) => (
-                        <p>{a}</p>
-                    ))
-                }
-            </>
-            <div style={{ backgroundImage: `url(${background})`, height: '100vh' }} class="container-fluid">
             <div>
-                <h1>Characters</h1>
-            </div>
+                <>
+                    {
+                        Please.map((a) => (
+                            <p>{a}</p>
+                        ))
+                    }
+                </>
+                <div style={{ backgroundImage: `url(${background})`, height: '100vh' }} class="container-fluid">
+                    <div>
+                        <h1>Characters</h1>
+                    </div>
 
-        </div>
-         </div>
+                </div>
+            </div>
 
         )
     }
+}
 
 
 
