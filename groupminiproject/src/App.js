@@ -7,6 +7,9 @@ import Films from "./components/Films";
 import Home from "./components/Home";
 import Tv from "./components/Tv";
 
+import DataGetter from "./components/DataGetter";
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -47,8 +50,13 @@ function App() {
 
           </Route>
 
-        </Switch>
+
+            </Switch>
       </Router>
+      <DataGetter/>
+
+
+
     </div>
   );
 }
